@@ -3,204 +3,282 @@ package curriculum_A;
 public class Qes1_13 {
 
 	public static void main(String[] args) {
-		
+
 		/*
 		 *	問１
 		 *	ローカル変数を宣言
 		 */
-			byte n ;
-			int i;
-			short s ;
-			long l ;
-			float f ;
-			double d ;
-			char c ;
-			String str;
-			boolean b;
-		
+		// バイト型の変数宣言
+		byte byte1;
+
+		// 短整数型の変数宣言
+		int int1;
+
+		// 整数型の変数宣言
+		short short1;
+
+		// 長整数型の変数宣言
+		long long1;
+
+		// 単精度浮動小数点数型の変数宣言
+		float float1;
+
+		// 倍精度浮動小数点数型の変数宣言
+		double double1;
+
+		// 文字型の変数宣言
+		char char1;
+
+		// 文字列型の変数宣言
+		String string1;
+
+		// ブーリアン型の変数宣言
+		boolean boolean1;
+
 		/*
 		 * 問２
-		 * 問1のローカル変数初期値を代入
+		 * それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化
 		 */
-			n = 0;
-			i = 0;
-			s = 0;
-			l = 0L;
-			f = 0.0f;
-			d = 0.0d;
-			c = '\u0000';
-			str = "null";
-			b = false;
-		
+		// 変数初期値代入
+		byte1 = 0;
+		int1 = 0;
+		short1 = 0;
+		long1 = 0L;
+		float1 = 0.0f;
+		double1 = 0.0d;
+		char1 = '\u0000';
+		string1 = "null";
+		boolean1 = false;
+
 		/*
 		 * 問３
 		 * 問2の初期化に変数代入
 		 */
-			n = 10;
-			i = 100;
-			s = 1000;
-			l = 10000;
-			f = 9.5f;
-			d = 10.5;
-			c = 'a';
-			str = "ハロー";
-			b = true;
-		
+		// 変数代入
+		byte1 = 10;
+		int1 = 100;
+		short1 = 1000;
+		long1 = 10000L;
+		float1 = 9.5f;
+		double1 = 10.5d;
+		char1 = 'a';
+		string1 = "ハロー";
+		boolean1 = true;
+
 		/*
 		 * 問４
 		 * 問3の出力
 		 */
-			System.out.println(n + i + s + l);
-			System.out.println(Math.round(f + d));
-			System.out.print(c);
-			System.out.print(str);
-			System.out.println(b);
-			System.out.println(n + i + s + l + Math.round(f + d));
-			System.out.println(n * i * s * l);
-			System.out.println(d / i);
-			System.out.println(n - i);
-			
-		//空白改行
-			System.out.println();
-		
+		// 「11110」と出力
+		System.out.println(byte1 + int1 + short1 + long1);
+
+		// 「20」と出力
+		System.out.println(Math.round(float1 + double1));
+
+		// 「a ハロー true」と出力
+		System.out.println(char1 + " " + string1 + " " + boolean1);
+
+
+		// 「11130」と出力
+		System.out.println(byte1 + int1 + short1 + long1 + Math.round(float1 + double1));
+
+		// 「0.105」と出力
+		System.out.println(byte1 * int1 * short1 * long1);
+
+		// 「10000000000」と出力
+		System.out.println(double1 / int1);
+
+		// 「-90」と出力
+		System.out.println(byte1 - int1);
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問５
 		 * ハローJAVA43と出力修正
 		 */
-			int num =20;
-			int num1=23;
-				System.out.println("ハローJAVA"+(num+num1));
-			
-		//空白改行
-			System.out.println();
-		
+		// 「ハローJAVA43」と出力
+		int num = 20;
+		int num1 = 23;
+		System.out.println("ハローJAVA" + (num + num1));
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問６
 		 * 自己紹介文を代入、出力
 		 */
-			String a1 = "山田太郎";
-			int i1 = 18;
-			double d1 = 170.5;
-			double d2 = 62.2;
-			String a2 = "寿司";
-		
-			//自己紹介文を出力
-			System.out.println("初めまして" + a1 + "です");
-			System.out.println("年齢は" + i1 + "歳です");
-			System.out.println("身長は" + d1 + "cmです");
-			System.out.println("体重は" + d2 + "kgです");
-			System.out.println("好きな食べ物は" + a2 + "です");
-		
+		// 名前を代入
+		String name = "山田太郎";
+
+		// 年齢を代入
+		int age = 18;
+
+		// 身長を代入
+		double height = 170.5;
+
+		// 体重を代入
+		double weight = 62.2;
+
+		// 好きな食べ物を代入
+		String like = "寿司";
+
+		// 「初めまして山田太郎です」と出力
+		System.out.println("初めまして" + name + "です");
+
+		// 「年齢は18歳です」と出力
+		System.out.println("年齢は" + age + "歳です");
+
+		// 「身長は170.5cmです」と出力
+		System.out.println("身長は" + height + "cmです");
+
+		// 「体重は62.2kgです」と出力
+		System.out.println("体重は" + weight + "kgです");
+
+		// 「好きな食べ物は寿司です」と出力
+		System.out.println("好きな食べ物は" + like + "です");
+
 		/*
 		 * 問７
 		 * 問6のBMIを出力
 		 */
-			double heightBmi = d1 / 100;
-				System.out.println("BMIは" + Math.floor(( d2/(heightBmi * heightBmi))*10)/10 + "です");
-			
-		//空白改行
-			System.out.println();
-		
+		// 身長をｍにするための変数を用意
+		short bmi = 100;
+
+		// 身長をｍにした時の変数
+		double heightBmi = height / bmi;
+
+		// 「ＢＭＩは21.3です」と出力
+		System.out.println("BMIは" + Math.floor((weight / (heightBmi * heightBmi)) * 10) / 10 + "です");
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問８
 		 * 問6に再代入
 		 */
-			a1 = "鈴木一郎";
-			i1 = 24;
-			d1 = 168.5;
-			d2 = 64.2;
-			a2 = "オムライス";
-		
-			//自己紹介文を出力
-			System.out.println("初めまして" + a1 + "です");
-			System.out.println("年齢は" + i1 + "歳です");
-			System.out.println("身長は" + d1 + "cmです");
-			System.out.println("体重は" + d2 + "kgです");
-			System.out.println("好きな食べ物は" + a2 + "です");
-		
-			//鈴木一郎のBMI
-			double heightBmi2 = d1 / 100;
-				System.out.println("BMIは" + Math.floor(( d2/(heightBmi2 * heightBmi2))*10)/10 + "です");
-			
-		//空白改行
-			System.out.println();
-		
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5;
+		weight = 64.2;
+		like = "オムライス";
+
+		// 「初めまして鈴木一郎です」と出力
+		System.out.println("初めまして" + name + "です");
+
+		// 「年齢は24歳です」と出力
+		System.out.println("年齢は" + age + "歳です");
+
+		// 「身長は168.5cmです」と出力
+		System.out.println("身長は" + height + "cmです");
+
+		// 「体重は62.2kgです」と出力
+		System.out.println("体重は" + weight + "kgです");
+
+		// 「好きな食べ物はオムライスです」と出力
+		System.out.println("好きな食べ物は" + like + "です");
+
+		// 鈴木一郎のBMI
+		double heightBmi2 = height / bmi;
+		System.out.println("BMIは" + Math.floor((weight / (heightBmi2 * heightBmi2)) * 10) / 10 + "です");
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問９
 		 * 問8に自己代入
 		 */
-			i1+=24;
-			d1+=168.5;
-			d2+=64.2;
-		
-			//自己紹介文を出力
-			System.out.println("初めまして" + a1 + "です");
-			System.out.println("年齢は" + i1 + "歳です");
-			System.out.println("身長は" + d1 + "cmです");
-			System.out.println("体重は" + d2 + "kgです");
-			System.out.println("好きな食べ物は" + a2 + "です");
-		
-			//問9の鈴木一郎BMI
-			double heightBmi3 = d1 / 100;
-				System.out.println("BMIは" + Math.ceil(( d2/(heightBmi3 * heightBmi3))*100)/100 + "です");
-		
-		//空白改行
-			System.out.println();
-			
+		age += 24;
+		height += 168.5;
+		weight += 64.2;
+
+		// 「初めまして鈴木一郎です」と出力
+		System.out.println("初めまして" + name + "です");
+
+		// 「年齢は48歳です」と出力
+		System.out.println("年齢は" + age + "歳です");
+
+		// 「身長は337.0cmです」と出力
+		System.out.println("身長は" + height + "cmです");
+
+		// 「体重は128.4kgです」と出力
+		System.out.println("体重は" + weight + "kgです");
+
+		// 「好きな食べ物はオムライスです」と出力
+		System.out.println("好きな食べ物は" + like + "です");
+
+		// 問9の鈴木一郎BMI
+		double heightBmi3 = height / bmi;
+		System.out.println("BMIは" + Math.ceil((weight / (heightBmi3 * heightBmi3)) * 100) / 100 + "です");
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問１０
 		 * 問8の年齢が25歳以上ならtrue出力
 		 */
-			boolean isOver25 = i1 >= 25 ? true : false;
-			System.out.println(isOver25);
-		
-		//空白改行
-			System.out.println();
-		
+		boolean isOver25 = age == 25;
+		System.out.println(isOver25);
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問１１
 		 * 8で使用した【年齢・身長・体重】を文字列型に型変換
 		 */
-			//文字列型に変換
-			String ii1 = String.valueOf(i1);
-			String dd1 = String.valueOf(d1);
-			String dd2 = String.valueOf(d2);
-			
-			//変換したのを出力
-			System.out.println("年齢は" + ii1 + "歳です");
-			System.out.println("身長は" + dd1 + "cmです");
-			System.out.println("体重は" + dd2 + "kgです");
-			
-		//空白改行
-			System.out.println();
-			
+		// 文字列型に変換
+		String age1 = Integer.toString(age);
+		String height1 = Double.toString(height);
+		String weight1 = Double.toString(weight);
+
+		// 「年齢は48歳です」と出力
+		System.out.println("年齢は" + age1 + "歳です");
+
+		// 「身長は337.0cmです」と出力
+		System.out.println("身長は" + height1 + "cmです");
+
+		// 「体重は128.4kgです」と出力
+		System.out.println("体重は" + weight1 + "kgです");
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問１２
 		 * 問11で変換した【年齢・身長】を整数型に変換して出力
 		 */
-			//【年齢・身長】を整数型に変換
-			int ii11 = Integer.parseInt(ii1);
-			double dd11 = Double.parseDouble(dd1);
-			double dd22 = Double.parseDouble(dd2);
-			
-			//出力
-			System.out.println("年齢は" + ii11 + "歳です");
-			System.out.println("身長は" + dd11 + "cmです");
-			System.out.println("体重は" + dd22 + "kgです");
-			
-		//空白改行
-			System.out.println();
-			
+		// 【年齢・身長】を整数型に変換
+		int age2 = Integer.parseInt(age1);
+		double height2 = Double.parseDouble(height1);
+		double weight2 = Double.parseDouble(weight1);
+
+		// 「年齢は48歳です」と出力
+		System.out.println("年齢は" + age2 + "歳です");
+
+		// 「身長は337.0cmです」と出力
+		System.out.println("身長は" + height2 + "cmです");
+
+		// 「体重は128.4kgです」と出力
+		System.out.println("体重は" + weight2 + "kgです");
+
+		// 空白改行
+		System.out.println();
+
 		/*
 		 * 問１３
 		 * 問12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力
 		 */
-			//変換
-			boolean isOver25orTall = (i1 >= 25) || (d1 >= 160);
-			
-			//出力
-			System.out.println(isOver25orTall);
-	}	
-	
+		// 変換
+		boolean isOver25OrTall = (age >= 25) || (height >= 160);
+
+		// 出力
+		System.out.println(isOver25OrTall);
+	}
 
 }
