@@ -243,7 +243,7 @@ System.out.println("初めまして" + name + "です "
 		String strHeight = String.valueOf(height);
 		String strWeight = String.valueOf(weight);
 
-		// 「年齢は48歳です」と出力
+		// 「年齢は24歳です」と出力
 		System.out.println("年齢は" + strAge + "歳です"
 				
 				// 「身長は337.0cmです」と出力
@@ -262,12 +262,13 @@ System.out.println("初めまして" + name + "です "
 		// 【年齢・身長】を整数型に変換
 		int intAge = Integer.parseInt(strAge);
 		double height2 = Double.parseDouble(strHeight);
+		int intHeight = (int) height2;
 
-		// 「年齢は48歳です」と出力
+		// 「年齢は24歳です」と出力
 		System.out.println("年齢は" + intAge + "歳です"
 				
-				// 「身長は337.0cmです」と出力
-				+ "\r\n身長は" + height2 + "cmです");
+				// 「身長は337cmです」と出力
+				+ "\r\n身長は" + intHeight + "cmです");
 
 		// 空白改行
 		System.out.print( "\r\n" );
