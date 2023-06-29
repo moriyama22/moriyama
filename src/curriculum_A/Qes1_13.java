@@ -70,28 +70,25 @@ public class Qes1_13 {
 		 * 問3の出力
 		 */
 		// 「11110」と出力
-		System.out.print(byte1 + int1 + short1 + long1 +
-				
-				// 「20」と出力
-				"\r\n" + Math.round(float1 + double1) +
-				
-				// 「a ハロー true」と出力
-				"\r\n" + char1 + " " + string1 + " " + boolean1 +
-				
-				// 「11130」と出力
-				"\r\n" + byte1 + int1 + short1 + long1 + Math.round(float1 + double1) +
-				
-				// 「0.105」と出力
-				"\r\n" + (byte1 * int1 * short1 * long1) +
-				
-				// 「10000000000」と出力
-				"\r\n" + (double1 / int1) +
-				
-				// 「-90」と出力
-				"\r\n" + (byte1 - int1));
+		System.out.println(byte1 + int1 + short1 + long1);
 
-		// 空白改行
-		System.out.print( "\r\n" );
+		// 「20」と出力
+		System.out.println(Math.round(float1 + double1));
+
+		// 「a ハロー true」と出力
+		System.out.println(char1 + " " + string1 + " " + boolean1);
+
+		// 「11130」と出力
+		System.out.println(byte1 + int1 + short1 + long1 + Math.round(float1 + double1));
+
+		// 「0.105」と出力
+		System.out.println(byte1 * int1 * short1 * long1);
+
+		// 「10000000000」と出力
+		System.out.println(double1 / int1);
+
+		// 「-90」と出力
+		System.out.println(byte1 - int1);
 
 		/*
 		 * 問５
@@ -101,15 +98,12 @@ public class Qes1_13 {
 		 * int num1=23;
 		 * System.out.println("ハローJAVA"+(num+num1));
 		 */
-		
+
 		int num = 20;
 		int num1 = 23;
-		
-		// 「ハローJAVA43」と出力
-		System.out.println("ハローJAVA" + (num + num1));
 
-		// 空白改行
-		System.out.print( "\r\n" );
+		// 「ハローJAVA43」と出力
+		System.out.println("\r\nハローJAVA" + (num + num1));
 
 		/*
 		 * 問６
@@ -131,19 +125,19 @@ public class Qes1_13 {
 		String like = "寿司";
 
 		// 「初めまして山田太郎です」と出力
-		System.out.println("初めまして" + name + "です "
-				
-				// 「年齢は18歳です」と出力
-				+ "\r\n年齢は" + age + "歳です "
-				
-				// 「身長は170.5cmです」と出力
-				+ "\r\n身長は"  + height + "cmです "
-				
-				// 「体重は62.2kgです」と出力
-				+ "\r\n体重は" + weight + "kgです "
-				
-				// 「好きな食べ物は寿司です」と出力
-				+ "\r\n好きな食べ物は" + like + "です");
+		System.out.println("\r\n初めまして" + name + "です");
+
+		// 「年齢は18歳です」と出力
+		System.out.println("年齢は" + age + "歳です");
+
+		// 「身長は170.5cmです」と出力
+		System.out.println("身長は" + height + "cmです");
+
+		// 「体重は62.2kgです」と出力
+		System.out.println("体重は" + weight + "kgです");
+
+		// 「好きな食べ物は寿司です」と出力
+		System.out.println("好きな食べ物は" + like + "です");
 
 		/*
 		 * 問７
@@ -158,9 +152,6 @@ public class Qes1_13 {
 		// 「ＢＭＩは21.3です」と出力
 		System.out.println("BMIは" + Math.floor((weight / (heightBmi * heightBmi)) * 10) / 10 + "です");
 
-		// 空白改行
-		System.out.print( "\r\n" );
-
 		/*
 		 * 問８
 		 * 問6に再代入
@@ -172,27 +163,24 @@ public class Qes1_13 {
 		like = "オムライス";
 
 		// 「初めまして鈴木一郎です」と出力
-		System.out.println("初めまして" + name + "です "
-				
-				// 「年齢は24歳です」と出力
-				+ "\r\n年齢は" + age + "歳です "
-				
-				// 「身長は168.5cmです」と出力
-				+ "\r\n身長は" + height + "cmです "
-				
-				// 「体重は62.2kgです」と出力
-				+ "\r\n体重は" + weight + "kgです "
-				
-				// 「好きな食べ物はオムライスです」と出力
-				+ "\r\n好きな食べ物は" + like + "です");
+		System.out.println("\r\n初めまして" + name + "です");
+
+		// 「年齢は24歳です」と出力
+		System.out.println("年齢は" + age + "歳です");
+
+		// 「身長は168.5cmです」と出力
+		System.out.println("身長は" + height + "cmです");
+
+		// 「体重は62.2kgです」と出力
+		System.out.println("体重は" + weight + "kgです");
+
+		// 「好きな食べ物はオムライスです」と出力
+		System.out.println("好きな食べ物は" + like + "です");
 
 		// 鈴木一郎のBMI
 		double heightBmi2 = height / bmi;
 		System.out.println("BMIは" + Math.floor((weight / (heightBmi2 * heightBmi2)) * 10) / 10 + "です");
 
-		// 空白改行
-		System.out.print( "\r\n" );
-		
 		/*
 		 * 問９
 		 * 問8に自己代入
@@ -202,26 +190,23 @@ public class Qes1_13 {
 		weight += 64.2;
 
 		// 「初めまして鈴木一郎です」と出力
-System.out.println("初めまして" + name + "です "
-				
+		System.out.println("\r\n初めまして" + name + "です ");
+
 				// 「年齢は48歳です」と出力
-				+ "\r\n年齢は" + age + "歳です "
-				
+		System.out.println("年齢は" + age + "歳です ");
+
 				// 「身長は337.0cmです」と出力
-				+ "\r\n身長は" + height + "cmです "
-				
+		System.out.println("身長は" + height + "cmです ");
+
 				// 「体重は128.4kgです」と出力
-				+ "\r\n体重は" + weight + "kgです "
-				
+		System.out.println("体重は" + weight + "kgです ");
+
 				// 「好きな食べ物はオムライスです」と出力
-				+ "\r\n好きな食べ物は" + like + "です");
+		System.out.println("好きな食べ物は" + like + "です");
 
 		// 問9の鈴木一郎BMI
 		double heightBmi3 = height / bmi;
 		System.out.println("BMIは" + Math.ceil((weight / (heightBmi3 * heightBmi3)) * 100) / 100 + "です");
-
-		// 空白改行
-		System.out.print( "\r\n" );
 
 		/*
 		 * 問１０
@@ -229,31 +214,27 @@ System.out.println("初めまして" + name + "です "
 		 */
 		age = 24;
 		boolean isOver25 = age >= 25;
-		System.out.println(isOver25);
-
-		// 空白改行
-		System.out.print( "\r\n" );
+		System.out.println( "\r\n" + isOver25);
 
 		/*
 		 * 問１１
 		 * 8で使用した【年齢・身長・体重】を文字列型に型変換
 		 */
 		// 文字列型に変換
+		height = 168.5;
+		weight = 64.2;
 		String strAge = String.valueOf(age);
 		String strHeight = String.valueOf(height);
 		String strWeight = String.valueOf(weight);
 
 		// 「年齢は24歳です」と出力
-		System.out.println("年齢は" + strAge + "歳です"
-				
-				// 「身長は337.0cmです」と出力
-				+ "\r\n身長は" + strHeight + "cmです"
-				
-				// 「体重は128.4kgです」と出力
-				+ "\r\n体重は" + strWeight + "kgです");
+		System.out.println("\r\n年齢は" + strAge + "歳です");
 
-		// 空白改行
-		System.out.print( "\r\n" );
+				// 「身長は168.5cmです」と出力
+		System.out.println("身長は" + strHeight + "cmです");
+
+				// 「体重は64.2kgです」と出力
+		System.out.println("体重は" + strWeight + "kgです");
 
 		/*
 		 * 問１２
@@ -265,13 +246,10 @@ System.out.println("初めまして" + name + "です "
 		int intHeight = (int) height2;
 
 		// 「年齢は24歳です」と出力
-		System.out.println("年齢は" + intAge + "歳です"
-				
-				// 「身長は337cmです」と出力
-				+ "\r\n身長は" + intHeight + "cmです");
+		System.out.println("\r\n年齢は" + intAge + "歳です");
 
-		// 空白改行
-		System.out.print( "\r\n" );
+				// 「身長は168cmです」と出力
+		System.out.println("身長は" + intHeight + "cmです");
 
 		/*
 		 * 問１３
@@ -281,7 +259,7 @@ System.out.println("初めまして" + name + "です "
 		boolean isOver25OrTall = (age >= 25) || (height >= 160);
 
 		// 出力
-		System.out.println(isOver25OrTall);
+		System.out.println("\r\n" + isOver25OrTall);
 	}
 
 }
