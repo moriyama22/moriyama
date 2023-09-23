@@ -48,7 +48,7 @@ public class Qes6 {
 			case "ディスプレイ":
 
 				// テレビが入力された場合１～11ランダム、ディスプレイの場合11-ランダム
-				int result = product.equals ("テレビ") ? remaining : (11 - remaining);
+				int result = product.equals ("テレビ") ? remaining : 11 - remaining;
 
 				// テレビ、ディスプレイは合わせて11になるように表示
 				System.out.println(product + "の残りの台数は" + result + "台です");

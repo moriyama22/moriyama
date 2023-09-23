@@ -10,6 +10,8 @@ public class Qes5 {
 			// jが９以下の時ループ
 			for (int j = 1; j <= 9; j++) {
 				
+				
+				
 				// iとjを3桁の文字列にフォーマット
 				String formattedI = String.format("%03d",i);
 				String formattedJ = String.format("%03d",j);
@@ -19,7 +21,7 @@ public class Qes5 {
 				System.out.print(formattedI + "*" + formattedJ + "=" + formattedIj);
 				
 				// ｊが9未満の場合、区切り｜｜を表示
-				if (j < 9) {
+				if (j < 19) {
 					System.out.print(" || ");
 				}
 			}
