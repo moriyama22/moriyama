@@ -20,10 +20,11 @@ public class Qes6 {
 		Random random = new Random();
 		int remaining = 0;
 
-		for (String product : products) {
+		// 0～11のランダム代入
+		remaining = random.nextInt(12);
 
-			// 0～11のランダム代入
-			remaining = random.nextInt(12);
+
+		for (String product : products) {
 
 			// 条件を指定
 			switch (product) {

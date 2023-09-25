@@ -5,10 +5,10 @@ public class Qes5 {
 	public static void main(String[] args) {
 		
 		// iが9以下の時ループ
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 9; i++) {
 			
 			// jが９以下の時ループ
-			for (int j = 1; j <= 9; j++) {
+			for (int j = 1; j <= 20; j++) {
 				
 				
 				
@@ -21,7 +21,7 @@ public class Qes5 {
 				System.out.print(formattedI + "*" + formattedJ + "=" + formattedIj);
 				
 				// ｊが9未満の場合、区切り｜｜を表示
-				if (j < 19) {
+				if (j < 20) {
 					System.out.print(" || ");
 				}
 			}
