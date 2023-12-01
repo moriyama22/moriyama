@@ -10,10 +10,10 @@ public class Animal {
 		Dog name = new Dog();
 		
 		//出力
-		System.out.println(name.animalName);
+		System.out.println(name.animalName1);
 		
 		// Q2：Dogクラスを呼び出して変数に代入し、動物の数をコンソールに出力してください。
-		Dog num =new Dog();
+		Dog num =new Dog(3);
 		
 		//出力
 		System.out.println("動物の数は" + num.animalName + "匹です");
