@@ -35,24 +35,20 @@
 	
  */
 
-package date;
 
-import java.util.Scanner;
-import sort.Sort;
+package main;
 
-public class Date {
-	// メインメソッド
+import sub.Scann;
+import sub.Sort;
+
+public class Main {
     public static void main(String[] args) {
-        // スキャナーオブジェクトの生成
-        Scanner scanner = new Scanner(System.in);
-        // 入力を受け取る
-        String input = scanner.nextLine();
-        scanner.close();
+        // 数字スキャンオブジェクトの生成
+        String[] indices = Scann.sc(); // Scannクラスのscメソッドから数字の配列を取得
         
-        // ソーターオブジェクトの生成
-        Sort sort = new Sort();
-        // ソートと出力メソッドの呼び出し
-        sort.sortAndPrint(input);
+        // 昇順・降順の入力を受け取る
+        boolean ascending = Scann.getAscendingInput(); // Scannクラス内でascendingを取得するメソッドを呼び出す
+        
+        Sort.sortData(indices, ascending);
     }
-
 }
