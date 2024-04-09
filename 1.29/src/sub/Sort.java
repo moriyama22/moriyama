@@ -16,7 +16,7 @@ public class Sort {
                     int index2 = Integer.parseInt(indices[j].trim());
                     double area1 = Double.parseDouble(date[index1].split(":")[2]);
                     double area2 = Double.parseDouble(date[index2].split(":")[2]);
-                    if (area1 > area2) {
+                    if (area1 < area2) {
                         // 要素の交換
                         String temp = indices[i];
                         indices[i] = indices[j];
@@ -32,7 +32,7 @@ public class Sort {
                     int index2 = Integer.parseInt(indices[j].trim());
                     double area1 = Double.parseDouble(date[index1].split(":")[2]);
                     double area2 = Double.parseDouble(date[index2].split(":")[2]);
-                    if (area1 < area2) {
+                    if (area1 > area2) {
                         // 要素の交換
                         String temp = indices[i];
                         indices[i] = indices[j];
