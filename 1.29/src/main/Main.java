@@ -40,14 +40,15 @@ package main;
 
 import sub.Scann;
 import sub.Sort;
+import sub.Number;
 
 public class Main {
     public static void main(String[] args) {
         // 数字スキャンオブジェクトの生成
-        String[] indices = Scann.sc(); // Scannクラスのscメソッドから数字の配列を取得
+        String[] indices = Number.sc(); // Numberクラスのscメソッドから数字の配列を取得
         
         // 昇順・降順の入力を受け取る
-        boolean ascending = Scann.getAscendingInput(); // Scannクラス内でascendingを取得するメソッドを呼び出す
+        boolean ascending = Scann.sc(); // Scannクラス内でascendingを取得するメソッドを呼び出す
         
         Sort.sortData(indices, ascending);
     }

@@ -14,7 +14,9 @@ public class Sort {
         		for (int j = i + 1; j < indices.length; j++) {
                     int index1 = Integer.parseInt(indices[i].trim());
                     int index2 = Integer.parseInt(indices[j].trim());
-                    if (index1 > index2) {
+                    double area1 = Double.parseDouble(date[index1].split(":")[2]);
+                    double area2 = Double.parseDouble(date[index2].split(":")[2]);
+                    if (area1 > area2) {
                         // 要素の交換
                         String temp = indices[i];
                         indices[i] = indices[j];
@@ -28,7 +30,9 @@ public class Sort {
                 for (int j = i + 1; j < indices.length; j++) {
                     int index1 = Integer.parseInt(indices[i].trim());
                     int index2 = Integer.parseInt(indices[j].trim());
-                    if (index1 < index2) {
+                    double area1 = Double.parseDouble(date[index1].split(":")[2]);
+                    double area2 = Double.parseDouble(date[index2].split(":")[2]);
+                    if (area1 < area2) {
                         // 要素の交換
                         String temp = indices[i];
                         indices[i] = indices[j];
@@ -44,11 +48,10 @@ public class Sort {
             int i = Integer.parseInt(index.trim());
             if (i >= 0 && i < date.length) {
                 String[] parts = date[i].split(":");
-                System.out.println("都道府県名：" + parts[1]);
-                System.out.println("県庁所在地：" + parts[2]);
-                System.out.println("面積：" + parts[3] + "km2\n");
-            } else {
-                System.out.println("入力された数字が範囲外です: " + i);
+                System.out.println("都道府県名：" + parts[0]);
+                System.out.println("県庁所在地：" + parts[1]);
+                System.out.println("面積：" + parts[2] + "km2\n");
+            
             }
         }
 	}
