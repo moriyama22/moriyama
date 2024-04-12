@@ -11,5 +11,6 @@ class Main{
 	Person.printCount();// 問題6：クラスメソッド「printCount」を呼び出してください
 	 System.out.println("合計" + Person.count + "人です");// 問題3：Main.javaで System.out.printlnを使い「合計〇〇人です」と出力してください。〇〇はcountの値です。
 	 
+	 
 	}
 }
